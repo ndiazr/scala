@@ -28,7 +28,7 @@ object Final {
     val sc = new SparkContext("local[*]", "Final")
     
     // Read each line of input data
-    val lines = sc.textFile("/Users/nelsondiaz/scala/hurtos_motos_2017_2020.csv")
+    val lines = sc.textFile("hurtos_motos_2017_2020.csv")
     
     val parsedLines = lines.map(parseLine)
     
